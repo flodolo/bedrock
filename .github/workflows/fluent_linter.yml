@@ -27,11 +27,13 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
-          cache: "pip"
       - name: Install Python dependencies
         run: |
           pip install moz-fluent-linter==0.3.*
       - name: Lint mozilla.org files
         run: |
           moz-fluent-lint l10n/en --config .github/l10n/linter_config.yml
+      - name: Lint Pocket files
+        if: always() # This step should run even if the previous one fails
+        run: |
           moz-fluent-lint l10n-pocket/en --config .github/l10n/linter_config.yml

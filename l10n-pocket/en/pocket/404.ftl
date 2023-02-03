@@ -5,7 +5,7 @@
 ### URL: https://dev.tekcopteg.com/404
 
 not-found-title = Page Not Found
-not-found-how-can-i-help = How Can I Help?
+not-found-how-can-i-help = How Can I Help? Firefox
 # Variables:
 #   $home (url) link to http://getpocket.com
 not-found-the-link-you-followed = The link you followed here is no longer working. Would you like to start over at the <a href="{ $home }">home page</a>?
